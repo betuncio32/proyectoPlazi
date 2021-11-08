@@ -12,9 +12,37 @@
         p:hover {
             color: sandybrown;
         }
+        p::first-letter {
+            color: teal;
+        }
+        p::before {
+            content: "🧨";
+        }
+        p:hover::before{
+            content: "✨";
+        }
+        p::after {
+            content: "🎈";
+        }
+        p:hover::after {
+            content: "🎊";
+        }
+        /*cambiardecoloralsegundohijo*/
+        div p:nth-child(2) {
+            color: slateblue;
+        }
+        ::placeholder {
+            color: tomato;
+        }
     </style>
 </head>
 <body>
     <p>Hola</p>
+    <div>
+        <p>Platzi</p>
+        <p>Master</p>
+        <p>Lo Mejor</p>
+    </div>
+    <input type="text" placeholder="Name">
 </body>
 </html>
