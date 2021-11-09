@@ -9,11 +9,19 @@
         .container {
             display: flex;
             background: powderblue;
-        }
+            justify-content: center;
+            height: 200px;
+            align-items: center;
+            flex-direction: column;
+       }
         .item {
             width: 30px;
             height: 30px;
             background: purple;
+        }
+        .container .item:nth-child(2n + 1) {
+            background: salmon;
+
         }
     </style>
 </head>
